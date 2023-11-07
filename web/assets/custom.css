@@ -1,0 +1,52 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+}
+
+html {
+    background-color: #f5f5f5;
+}
+
+#my-nav-menu {
+    display: none;
+}
+
+#myheader {
+    background-color: #FFF;
+    box-shadow: 0px 0px 16px rgba(18, 38, 32, 0.5);
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+#my-reservations {
+    margin: 0px auto;
+    grid-template-columns: 4fr 1fr;
+    max-width: fit-content;
+}
+
+@media (max-width:576px) {
+    #my-header-nav {
+        display: none;
+    }
+
+    #my-nav-menu {
+        display: block;
+    }
+
+    #my-reservations {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width:768px) {
+    #my-header-nav {
+        display: none;
+    }
+
+    #my-nav-menu {
+        display: block;
+    }
+}
+
+@media (max-width:992px) {}
